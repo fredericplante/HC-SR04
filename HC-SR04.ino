@@ -12,7 +12,6 @@ int ajustement_fin = 0;
 bool en_attente = false;
 
 void setup() {
-
   
   pinMode(broche_Trig, OUTPUT);
   pinMode(broche_Echo, INPUT);
@@ -22,7 +21,6 @@ void setup() {
 }
 
 void loop() {
-  
   
   if(en_attente == false) {
   
