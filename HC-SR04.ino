@@ -7,6 +7,8 @@ unsigned long debut_ping = 0;
 const double k_Mach = 29.4117647;
 
 byte distance;
+int ajustement_fin = 0;
+
 bool en_attente = false;
 
 void setup() {
@@ -45,7 +47,7 @@ void echo_percue(){
 
 void echo_terminee(){
   
-  distance = ((0.5 / k_Mach) * (micros() - debut_ping));//f(x) = ax
+  distance = ((0.5 / k_Mach) * (micros() - debut_ping)) + ajustement_fin;//f(x) = ax
   
   if (!(distance >= 150 || distance <= 0)){
      
