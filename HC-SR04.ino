@@ -50,7 +50,7 @@ void echo_terminee(){
   if (!(distance >= 150 || distance <= 0)){
      
     Serial.println((String)distance + F(" cm"));
-    tone(broche_Piezo, 10500, 5); 
+    tone(broche_Piezo, 10500 / distance, 5); 
     
   }
   
