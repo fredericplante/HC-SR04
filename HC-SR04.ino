@@ -14,10 +14,8 @@ int ajustement_fin = 0;
 
 byte distance;
 
-
 void setup() {
 
-  
   pinMode(broche_Trig, OUTPUT);
   pinMode(broche_Echo, INPUT);
 
